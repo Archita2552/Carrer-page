@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import SearchBar from './components/SearchBar';
+import JobCard from './components/JobCard';
+// import About from './components/About';
 
 function App() {
+  const jobData = Array(9).fill({
+    title: 'Senior Manager - Strategy Planning & Execution',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <SearchBar />
+      <div className="job-card-section">
+        {jobData.map((job, index) => (
+           <JobCard key={index} title={job.title} description={job.description} /> 
+        ))} 
+       </div> 
+      {/* <About /> */}
     </div>
   );
 }
