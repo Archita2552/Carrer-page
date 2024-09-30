@@ -18,7 +18,7 @@ body, html {
   padding: 100px 0; 
   background: radial-gradient(circle at 55% 50%, #ff914d, #9c27b0, #381AB2, #17082c); 
   background-size: 300% 300%;
-  animation: gradientAnimation 80s infinite linear;
+  animation: gradientAnimation 70s infinite linear;
   border-radius: 15px;
   margin: 0.5%;
   position: relative;
@@ -28,19 +28,19 @@ body, html {
 
 @keyframes gradientAnimation {
   0% {
-      background-position: 0% 50%;
+      background-position: 75% 100%;
   }
   25% {
-      background-position: 50% 0%;
+      background-position: 75% 25%;
   }
   50% {
     background-position: 100% 50%;
 }
 75% {
-  background-position: 50% 100%;
+  background-position: 25% 75%;
 }
   100% {
-      background-position: 0% 50%;
+      background-position: 50% 50%;
   }
 }
 .header h1 {
