@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import JobCard from './components/JobCard';
-// import About from './components/About';
+import About from './components/About';
 
 function App() {
   const jobData = Array(9).fill({
@@ -20,7 +20,7 @@ function App() {
            <JobCard key={index} title={job.title} description={job.description} /> 
         ))} 
        </div> 
-      {/* <About /> */}
+       <About /> 
     </div>
   );
 }
