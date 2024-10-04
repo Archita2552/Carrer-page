@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
   return (
     <header className="header">
-      <h1>Career</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div className='header-heading'>Career</div>
+      <div className='header-para'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</div>
     </header>
   );
 };

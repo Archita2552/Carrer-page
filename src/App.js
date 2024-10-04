@@ -8,7 +8,7 @@ import About from './components/About';
 function App() {
   const jobData = Array(9).fill({
     title: 'Senior Manager - Strategy Planning & Execution',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed...',
   });
 
   return (
