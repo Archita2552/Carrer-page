@@ -213,7 +213,7 @@ color: #2F2F2F;
 
 .apply-btn:hover {
   background-color: white; /* Change background color */
-  color: black; /* Change text color */
+  color: black; 
   border: 2px solid transparent; /* Make border transparent for gradient effect */
   background-image: linear-gradient(white, white), /* Button background stays white */
                     linear-gradient(-15deg, #FEAC2F, #9B32AD, #381AB2, #17082C); /* Gradient border */
